@@ -5,16 +5,13 @@ Project template for Checkbox's Tech Challenge, a React client and Express/Node 
 ## Table of contents <!-- omit in toc -->
 
 - [Project scope](#project-scope)
-    - [Your task](#your-task)
-    - [Out of scope](#out-of-scope)
-    - [What we’ll be looking for](#what-well-be-looking-for)
+  - [Your task](#your-task)
+  - [Out of scope](#out-of-scope)
+  - [What we’ll be looking for](#what-well-be-looking-for)
 - [Getting started](#getting-started)
-    - [Development server](#development-server)
-        - [Prerequisites](#prerequisites)
-        - [Installing and running](#installing-and-running)
-    - [Docker Compose](#docker-compose)
-        - [Prerequisites](#prerequisites-1)
-        - [Installing and running](#installing-and-running-1)
+  - [Docker Compose](#docker-compose)
+    - [Prerequisites](#prerequisites)
+    - [Installing and running](#installing-and-running)
 - [Database configuration](#database-configuration)
 
 ## Project scope
@@ -71,24 +68,7 @@ together at the following set of user stories.
 
 ## Getting started
 
-There are 2 ways to start the project out-of-the-box: [development server](#development-server) or [Docker Compose](#docker-compose). Please note that, for the purposes of the assessment, the final solution **_must_** work as intended via Docker Compose.
-
-### Development server
-
-#### Prerequisites
-
-- [Node](https://nodejs.org/en/) _(see [`.nvmrc`](.nvmrc) for version number)_
-- [Yarn 1](https://classic.yarnpkg.com/lang/en/)
-
-#### Installing and running
-
-Open a command line of your preference and do the following:
-
-1. Run `yarn install` to install the dependencies.
-
-2. Run `yarn dev` to start the development server.
-
-3. Wait for a console message saying the app is ready, open the browser of your preference and navigate to http://localhost:3000.
+This project must work with the [Docker Compose](#docker-compose) configuration we provided.  
 
 ### Docker Compose
 
@@ -106,6 +86,10 @@ Open a command line of your preference and do the following:
 3. Wait for a console message saying the app is ready, open the browser of your preference and navigate to http://localhost:3000.
 
 4. Run `docker compose down` on a separate terminal whenever you want to stop the services.
+
+5. If you change your environment variables at any point you will need to rebuild the docker containers 
+   1. run `docker compose down -v` to remove all existing docker container volumes 
+   2. run `docker compose up`
 
 ## Database configuration
 
